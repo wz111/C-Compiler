@@ -1,0 +1,22 @@
+void main()
+{
+	int assign_test1, assign_test2;
+	char assign_test3;
+	int assign_test4;
+	int assign_test5[5];
+	
+	assign_test1 = 2*3*2/4-10*(20-4*5)+(15-(3+3*4));
+	if(assign_test1!=3)
+		printf("expected : assign_test1 = 3, real : assign_test1 = ", assign_test1);
+	else;
+	
+	assign_test2 = 'a'+'a'*('c' - 'a')/('Z'-'X')-'a';
+	if(assign_test2 != 97)
+		printf("expected : assign_test2 = 97, real : assign_test2 = ", assign_test2);
+	else;
+	
+	assign_test3 = 'a'+1-('b'*'C'/('A'+2))+'A';
+	if(assign_test3 != 'A')
+		printf("expected : assign_test3 = A, real : assign_test3 = ", assign_test3);
+	else;
+}

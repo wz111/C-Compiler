@@ -1,0 +1,119 @@
+const int   max_num = 1024
+void  complete_num()
+array int   k[1024]
+var int   i
+var int   j
+var int   n
+var int   s
+var int   x1
+var int   m
+var int   k2
+var int   h
+var int   leap
+var int   x2
+j = 2
+LABEL_0000:
+j < max_num
+BZ LABEL_0001
+$0 = 0 - 1
+n = $0
+s = j
+i = 1
+LABEL_0002:
+i < j
+BZ LABEL_0003
+$1 = j / i
+$2 = $1 * i
+x1 = $2
+x1 == j
+BZ LABEL_0004
+$3 = n + 1
+n = $3
+$4 = s - i
+s = $4
+n >= 1024
+BZ LABEL_0006
+printf("OVERFLOW! ")
+GOTO LABEL_0007
+LABEL_0006:
+k[n] = i
+LABEL_0007:
+GOTO LABEL_0005
+LABEL_0004:
+LABEL_0005:
+$5 = i + 1
+i = $5
+GOTO LABEL_0002
+LABEL_0003:
+s == 0
+BZ LABEL_0008
+printf("complete number: ", j)
+i = 0
+LABEL_0010:
+i <= n
+BZ LABEL_0011
+$6 = k[i]
+printf("  ", $6)
+$7 = i + 1
+i = $7
+GOTO LABEL_0010
+LABEL_0011:
+printf("  ")
+GOTO LABEL_0009
+LABEL_0008:
+LABEL_0009:
+$8 = j + 1
+j = $8
+GOTO LABEL_0000
+LABEL_0001:
+printf("---------------------------------------------------------------\n")
+h = 0
+leap = 1
+m = 2
+LABEL_0012:
+m <= max_num
+BZ LABEL_0013
+$9 = m - 1
+k2 = $9
+i = 2
+LABEL_0014:
+i <= k2
+BZ LABEL_0015
+$10 = m / i
+$11 = $10 * i
+x2 = $11
+x2 == m
+BZ LABEL_0016
+leap = 0
+GOTO LABEL_0017
+LABEL_0016:
+LABEL_0017:
+$12 = i + 1
+i = $12
+GOTO LABEL_0014
+LABEL_0015:
+leap == 1
+BZ LABEL_0018
+printf(" ", m)
+$13 = h + 1
+h = $13
+$14 = h / 10
+$15 = $14 * 10
+x2 = $15
+x2 == h
+BZ LABEL_0020
+printf("  ")
+GOTO LABEL_0021
+LABEL_0020:
+LABEL_0021:
+GOTO LABEL_0019
+LABEL_0018:
+LABEL_0019:
+leap = 1
+$16 = m + 1
+m = $16
+GOTO LABEL_0012
+LABEL_0013:
+printf("The total is ", h)
+void  main()
+call complete_num

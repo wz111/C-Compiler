@@ -1,0 +1,240 @@
+# depslib dependency file v1.0
+1512131720 source:d:\study\three\compile\homework\compiler\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"main.h"
+	"wordAnalyze.h"
+	"grammarAnalyze.h"
+
+1511836886 d:\study\three\compile\homework\compiler\main.h
+
+1511962109 d:\study\three\compile\homework\compiler\wordanalyze.h
+
+1511962259 d:\study\three\compile\homework\compiler\grammaranalyze.h
+
+1512132210 source:d:\study\three\compile\homework\compiler\wordanalyze.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"main.h"
+
+1512388359 source:c:\users\administrator\desktop\15061189_李欣泽_语法分析\grammaranalyze.cpp
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdlib.h>
+	"main.h"
+	"wordAnalyze.h"
+	"grammarAnalyze.h"
+
+1511836886 c:\users\administrator\desktop\15061189_李欣泽_语法分析\main.h
+
+1511962109 c:\users\administrator\desktop\15061189_李欣泽_语法分析\wordanalyze.h
+
+1512131720 source:c:\users\administrator\desktop\15061189_李欣泽_语法分析\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"main.h"
+	"wordAnalyze.h"
+	"grammarAnalyze.h"
+
+1511962259 c:\users\administrator\desktop\15061189_李欣泽_语法分析\grammaranalyze.h
+
+1512384525 source:c:\users\administrator\desktop\15061189_李欣泽_语法分析\wordanalyze.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"main.h"
+
+1512388383 source:c:\users\administrator\desktop\15061189_李欣泽_语法分析\actionprogram.cpp
+	<stdio.h>
+	<string.h>
+	"table.h"
+
+1512388409 c:\users\administrator\desktop\15061189_李欣泽_语法分析\table.h
+
+1512388480 source:c:\users\administrator\desktop\15061189_李欣泽_语法分析\table.cpp
+	<stdio.h>
+	"main.h"
+	"wordAnalyze.h"
+	"grammarAnalyze.h"
+	"table.h"
+
+1512388383 source:c:\users\administrator\desktop\15061189\actionprogram.cpp
+	<stdio.h>
+	<string.h>
+	"table.h"
+
+1512808219 c:\users\administrator\desktop\15061189\table.h
+	<cstring>
+
+1512897310 source:c:\users\administrator\desktop\15061189\grammaranalyze.cpp
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdlib.h>
+	"main.h"
+	"wordAnalyze.h"
+	"grammarAnalyze.h"
+	"midcode.h"
+	"table.h"
+
+1512870185 c:\users\administrator\desktop\15061189\main.h
+
+1512724325 c:\users\administrator\desktop\15061189\wordanalyze.h
+
+1512807066 c:\users\administrator\desktop\15061189\grammaranalyze.h
+
+1512891696 source:c:\users\administrator\desktop\15061189\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"main.h"
+	"wordAnalyze.h"
+	"grammarAnalyze.h"
+	"midcode.h"
+	"mips.h"
+
+1512745981 source:c:\users\administrator\desktop\15061189\table.cpp
+	<stdio.h>
+	"main.h"
+	"wordAnalyze.h"
+	"grammarAnalyze.h"
+	"table.h"
+
+1512384525 source:c:\users\administrator\desktop\15061189\wordanalyze.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"main.h"
+
+1512885902 c:\users\administrator\desktop\15061189\midcode.h
+
+1512885902 source:c:\users\administrator\desktop\15061189\midcode.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"midcode.h"
+	"table.h"
+	"main.h"
+
+1512896907 source:c:\users\administrator\desktop\15061189\mips.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"table.h"
+	"midcode.h"
+
+1512891671 c:\users\administrator\desktop\15061189\mips.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"table.h"
+	"midcode.h"
+
+1512891708 c:\users\administrator\desktop\15061189\mips.h
+
+1515845773 source:c:\users\administrator\desktop\15061189my\grammaranalyze.cpp
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<stdlib.h>
+	"main.h"
+	"wordAnalyze.h"
+	"grammarAnalyze.h"
+	"midcode.h"
+	"table.h"
+	"error.h"
+
+1515761521 c:\users\administrator\desktop\15061189my\main.h
+
+1513651027 c:\users\administrator\desktop\15061189my\wordanalyze.h
+
+1514621227 c:\users\administrator\desktop\15061189my\grammaranalyze.h
+
+1515763100 c:\users\administrator\desktop\15061189my\midcode.h
+	"table.h"
+
+1515416621 c:\users\administrator\desktop\15061189my\table.h
+	<cstring>
+
+1515764469 source:c:\users\administrator\desktop\15061189my\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"main.h"
+	"wordAnalyze.h"
+	"grammarAnalyze.h"
+	"midcode.h"
+	"mips.h"
+	"optimization.h"
+
+1515593592 c:\users\administrator\desktop\15061189my\mips.h
+
+1515764304 source:c:\users\administrator\desktop\15061189my\midcode.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"midcode.h"
+	"table.h"
+	"main.h"
+
+1514537288 source:c:\users\administrator\desktop\15061189my\table.cpp
+	<stdio.h>
+	"main.h"
+	"wordAnalyze.h"
+	"grammarAnalyze.h"
+	"table.h"
+	"error.h"
+
+1514625096 source:c:\users\administrator\desktop\15061189my\wordanalyze.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"main.h"
+	"error.h"
+
+1515760920 source:c:\users\administrator\desktop\15061189my\mips.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<vector>
+	<string>
+	"table.h"
+	"midcode.h"
+	"optimization.h"
+
+1514970966 source:c:\users\administrator\desktop\15061189my\error.cpp
+	<stdio.h>
+	<stdlib.h>
+	"main.h"
+	"wordAnalyze.h"
+	"error.h"
+
+1514969062 c:\users\administrator\desktop\15061189my\error.h
+
+1515751770 c:\users\administrator\desktop\15061189my\optimization.h
+	<iostream>
+	<vector>
+	<set>
+
+1515763194 source:c:\users\administrator\desktop\15061189my\optimization.cpp
+	<stdio.h>
+	<iostream>
+	<vector>
+	<set>
+	<string>
+	"midcode.h"
+	"optimization.h"
+	"table.h"
+

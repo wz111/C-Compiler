@@ -1,0 +1,238 @@
+const int A = 1;
+const int A1 = 1;
+const int _A1 = 1;
+const int _ = 2;
+const int AA = 1, AAA = 1, AAAA = 1;
+const char B = 'a';
+const char B1 = 'a';
+const char _B = 'a';
+const char BB = 'a', BBB = 'a', BBBB = 'a';
+
+int var1;
+int _var1;
+char var2;
+char _var2;
+
+int getThree
+{
+	return (3);
+}
+
+char getA
+{
+	return ('A');
+}
+
+int loopTest(int loop_test1, int loop_test2, char loop_test3, char loop_test4)
+{
+	int i;
+	i = 0;
+	while(loop_test1 < loop_test2)
+	{
+		loop_test1 = loop_test1 + 1;
+	}
+	
+	if(loop_test1 > loop_test2)
+	{
+		printf("expected: loop_test1 = loop_test2 = 100, real: loop_test2 = 100, loop_test1 = ", loop_test1);
+		return (-1);
+	}
+	else
+		if(loop_test1 < loop_test2)
+		{
+			printf("expected: loop_test1 = loop_test2 = 100, real: loop_test2 = 100, loop_test1 = ", loop_test1);
+			return (-1);
+		}
+		else{
+			while(loop_test3 == loop_test2)
+			{
+				loop_test4 = 'd';
+				loop_test3 = 'D';
+			}
+			while(loop_test3 < loop_test4)
+			{
+				return (0);
+			}
+			return (-1);
+		}
+}
+
+int switchTest(int switch_test1, char switch_test2)
+{
+	int re;
+	switch (switch_test1)
+	{
+		case -1:
+			re = -1;
+		case 0:
+			re = -1;
+		case 1:
+			re = 0;
+		default:
+			re = -1;
+	}
+	
+	switch (switch_test2)
+	{
+		case 'A':
+			re = -1;
+		case 'a':
+			re = 0;
+		default:
+			re = -1;
+	}
+	
+	return (re);
+}
+
+void assignTest
+{
+	int assign_test1, assign_test2;
+	char assign_test3;
+	int assign_test4;
+	int assign_test5[5];
+	var1 = +1;
+	if(var1 != 1)
+		printf("expected : var1 = 1, real : var1 = ", var1);
+	else;
+	
+	_var1 = -1;
+	if(_var1!=-1)
+		printf("expected : _var1 = -1, real : _var1 = ", _var1);
+	else;
+	
+	var2 = 'a';
+	if(var2!='a')
+		printf("expected : var2 = a, real : var2 = ", var2);
+	else;
+	
+	_var2 = 'b';
+	if(_var2!='b')
+		printf("expected : _var2 = b, real : _var2 = ", _var2);
+	else;
+	
+	assign_test1 = 2*3*2/4-10*(20-4*5)+(15-(3+3*4));
+	if(assign_test1!=3)
+		printf("expected : assign_test1 = 3, real : assign_test1 = ", assign_test1);
+	else;
+	
+	assign_test2 = 'a'+'a'*('c' - 'a')/('Z'-'X')-'a';
+	if(assign_test2 != 97)
+		printf("expected : assign_test2 = 97, real : assign_test2 = ", assign_test2);
+	else;
+	
+	assign_test3 = 'a'+1-('b'*'C'/('A'+2))+'A';
+	if(assign_test3 != 'A')
+		printf("expected : assign_test3 = A, real : assign_test3 = ", assign_test3);
+	else;
+	
+	assign_test4 = A + A1*_A1 - var1;
+	if(assign_test4!=1)
+		printf("expected : assign_test4 = 1, real : assign_test4 = ", assign_test4);
+	else;
+	
+	assign_test5[0] = getThree;
+	if(assign_test5[0]!=3)
+		printf("expected : assign_test5[0] = 3 real : assign_test5[0] = ", assign_test5[0]);
+	else;
+	
+	assign_test5[1] = assign_test5[0]+(1+2)/getThree;
+	if(assign_test5[1]!=4)
+		printf("expected : assign_test5[1] = 4 real : assign_test5[1] = ", assign_test5[1]);
+	else;
+	
+	assign_test5[1+2/2] = assign_test5[1]+assign_test5[0];
+	if(assign_test5[2]!=7)
+		printf("expected : assign_test5[2] = 7 real : assign_test5[2] = ", assign_test5[2]);
+	else;
+	
+	assign_test5[6/2] = assign_test5[2]+assign_test5[1];
+	if(assign_test5[3]!=11)
+		printf("expected : assign_test5[3] = 11 real : assign_test5[3] = ", assign_test5[3]);
+	else;
+	
+	assign_test5[2*2] = assign_test5[3]+assign_test5[2];
+	if(assign_test5[4]!=18)
+		printf("expected : assign_test5[4] = 18 real : assign_test5[4] = ", assign_test5[4]);
+	else;
+}
+
+void conditionTest
+{
+	int con_test0, con_test1, con_test2;
+	char con_test3, con_test4;
+	con_test0 = 0;
+	con_test1 = 10;
+	con_test2 = -10;
+	con_test3 = 'b';
+	con_test4 = 'B';
+	if(con_test0 < 1)
+		;
+	else
+		printf("expected: con_test0 = 0, real: con_test0 = ", con_test0);
+	
+	if(con_test1 == 10)
+		;
+	else
+		printf("expected: con_test1 = 10, real: con_test1 = ", con_test1);
+	
+	if(con_test2 <= 10)
+		;
+	else
+		printf("expected: con_test2 = -10, real: con_test2 = ", con_test2);
+		
+	if(con_test3 >= 'a')
+		;
+	else
+		printf("expected: con_test3 = b, real: con_test3 = ", con_test3);
+	
+	if(con_test4 > 'A')
+		;
+	else
+		printf("expected: con_test4 = B, real: con_test4 = ", con_test4);
+}
+
+void rwTest
+{
+	int rw_test1, rw_test2, rw_test3;
+	char rw_test4, rw_test5, rw_test6;
+	scanf(rw_test1);
+	scanf(rw_test2, rw_test3);
+	scanf(rw_test4);
+	scanf(rw_test5, rw_test6);
+	printf("result: ");
+	printf(rw_test1);
+	printf(rw_test2 + rw_test3);
+	printf(rw_test4);
+	printf(rw_test5 - rw_test6);
+}
+
+void main()
+{
+	int loop_param1, loop_param2;
+	char loop_param3, loop_param4;
+	int switch_param1;
+	char switch_param2;
+	int res1;
+	int res2;
+	assignTest;
+	conditionTest;
+	rwTest;
+	loop_param1 = 10;
+	loop_param2 = 100;
+	loop_param3 = 'd';
+	loop_param4 = 'D';
+	switch_param2 = 'a';
+	res1 = loopTest(loop_param1, loop_param2, loop_param3, loop_param4);
+	if(res1 != 0)
+	{
+		printf("loopTest ERROR!");
+	}
+	else ;
+	res2 = switchTest(1, switch_param2);
+	if(res2)
+	{
+		printf("switchTest ERROR!");
+	}
+	else ;
+}

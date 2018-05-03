@@ -1,0 +1,121 @@
+const, int  , 1024 , max_num
+func , void ,      , complete_num
+int  ,      , 1024 , k    
+int  ,      ,      , i    
+int  ,      ,      , j    
+int  ,      ,      , n    
+int  ,      ,      , s    
+int  ,      ,      , x1   
+int  ,      ,      , m    
+int  ,      ,      , k2   
+int  ,      ,      , h    
+int  ,      ,      , leap 
+int  ,      ,      , x2   
+=    , 2    ,      , j    
+lab: ,      ,      , LABEL_0000
+<    , j    , max_num,      
+jne  ,      ,      , LABEL_0001
+-    , 0    , 1    , $0   
+=    , $0   ,      , n    
+=    , j    ,      , s    
+=    , 1    ,      , i    
+lab: ,      ,      , LABEL_0002
+<    , i    , j    ,      
+jne  ,      ,      , LABEL_0003
+/    , j    , i    , $1   
+*    , $1   , i    , $2   
+=    , $2   ,      , x1   
+==   , x1   , j    ,      
+jne  ,      ,      , LABEL_0004
++    , n    , 1    , $3   
+=    , $3   ,      , n    
+-    , s    , i    , $4   
+=    , $4   ,      , s    
+>=   , n    , 1024 ,      
+jne  ,      ,      , LABEL_0006
+print, "OVERFLOW! ",      ,      
+jmp  ,      ,      , LABEL_0007
+lab: ,      ,      , LABEL_0006
+[]=  , i    , n    , k    
+lab: ,      ,      , LABEL_0007
+jmp  ,      ,      , LABEL_0005
+lab: ,      ,      , LABEL_0004
+lab: ,      ,      , LABEL_0005
++    , i    , 1    , $5   
+=    , $5   ,      , i    
+jmp  ,      ,      , LABEL_0002
+lab: ,      ,      , LABEL_0003
+==   , s    , 0    ,      
+jne  ,      ,      , LABEL_0008
+print, "complete number: ", j    , int  
+=    , 0    ,      , i    
+lab: ,      ,      , LABEL_0010
+<=   , i    , n    ,      
+jne  ,      ,      , LABEL_0011
+=[]  , k    , i    , $6   
+print, "  " , $6   , int  
++    , i    , 1    , $7   
+=    , $7   ,      , i    
+jmp  ,      ,      , LABEL_0010
+lab: ,      ,      , LABEL_0011
+print, "  " ,      ,      
+jmp  ,      ,      , LABEL_0009
+lab: ,      ,      , LABEL_0008
+lab: ,      ,      , LABEL_0009
++    , j    , 1    , $8   
+=    , $8   ,      , j    
+jmp  ,      ,      , LABEL_0000
+lab: ,      ,      , LABEL_0001
+print, "---------------------------------------------------------------\n",      ,      
+=    , 0    ,      , h    
+=    , 1    ,      , leap 
+=    , 2    ,      , m    
+lab: ,      ,      , LABEL_0012
+<=   , m    , max_num,      
+jne  ,      ,      , LABEL_0013
+-    , m    , 1    , $9   
+=    , $9   ,      , k2   
+=    , 2    ,      , i    
+lab: ,      ,      , LABEL_0014
+<=   , i    , k2   ,      
+jne  ,      ,      , LABEL_0015
+/    , m    , i    , $10  
+*    , $10  , i    , $11  
+=    , $11  ,      , x2   
+==   , x2   , m    ,      
+jne  ,      ,      , LABEL_0016
+=    , 0    ,      , leap 
+jmp  ,      ,      , LABEL_0017
+lab: ,      ,      , LABEL_0016
+lab: ,      ,      , LABEL_0017
++    , i    , 1    , $12  
+=    , $12  ,      , i    
+jmp  ,      ,      , LABEL_0014
+lab: ,      ,      , LABEL_0015
+==   , leap , 1    ,      
+jne  ,      ,      , LABEL_0018
+print, " "  , m    , int  
++    , h    , 1    , $13  
+=    , $13  ,      , h    
+/    , h    , 10   , $14  
+*    , $14  , 10   , $15  
+=    , $15  ,      , x2   
+==   , x2   , h    ,      
+jne  ,      ,      , LABEL_0020
+print, "  " ,      ,      
+jmp  ,      ,      , LABEL_0021
+lab: ,      ,      , LABEL_0020
+lab: ,      ,      , LABEL_0021
+jmp  ,      ,      , LABEL_0019
+lab: ,      ,      , LABEL_0018
+lab: ,      ,      , LABEL_0019
+=    , 1    ,      , leap 
++    , m    , 1    , $16  
+=    , $16  ,      , m    
+jmp  ,      ,      , LABEL_0012
+lab: ,      ,      , LABEL_0013
+print, "The total is ", h    , int  
+vend ,      ,      ,      
+func , void ,      , main 
+call , complete_num, 0    ,      
+exit ,      ,      ,      

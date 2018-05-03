@@ -1,0 +1,17 @@
+void main()
+{
+	int y, z;
+	int min;
+	min = 11;
+	z = 1--1;
+	printf("z = ", z);
+	switch(z)
+	{
+		case 1:
+			printf("one");
+		case 2
+			printf("two", z+);
+		default
+			printf("default", +01);
+	}
+}

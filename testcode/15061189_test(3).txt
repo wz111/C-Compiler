@@ -1,0 +1,17 @@
+
+void main()
+{
+	int num,i;
+	i = 2;
+	scanf(num);
+	while(num > 1){
+		if(num-(num/i)*i == 0){
+			printf(" ",i);
+			num = num/i;
+		}
+		else{
+			i = i + 1;
+		}
+	}
+	return (0);
+}

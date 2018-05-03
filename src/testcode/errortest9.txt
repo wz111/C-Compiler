@@ -1,0 +1,18 @@
+void func
+{
+	int c;
+	int x10];
+	scanf(c, xc);
+	scanf( x);
+}
+
+int x
+{
+	;
+}
+
+void main()
+{
+	func();
+	return ;
+}

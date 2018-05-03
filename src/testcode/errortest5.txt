@@ -1,0 +1,12 @@
+void get int x)
+{
+	x = 10;
+
+void main()
+{
+	int y, z;
+	int min;
+	= 9;
+	min = 11;
+	z = 1--1+;
+	printf("z = ", z+);
